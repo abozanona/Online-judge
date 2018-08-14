@@ -1,0 +1,13 @@
+a{
+	text-decoration:none;
+}
+body,div,ul{margin:0;}
+#wraper{
+	white-space:nowrap;
+	width:980px;
+	background:#eee;
+	margin:auto;
+}
+.leftCol,.rightCol{display:inline-block;vertical-align:top;}
+.leftCol{background:#F00;width:720px;margin-top:20px;}
+.rightCol{background:#00F;width:215px;margin:20px;}

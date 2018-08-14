@@ -1,0 +1,151 @@
+ sudo apt-get install apache2
+ 1142  sudo apt-get install mysql-server
+ 1143  sudo apt-get install php5 libapache2-mod-php5
+ 1144  sudo /etc/init.d/apache2 restart
+ 1145  php -r 'echo "\n\nYour PHP installation is working fine.\n\n\n";'
+ 1146  sudo apt-get update
+ 1147  sudo apt-get install lamp-server^
+ 1148  cd '/etc/apache2/sites-available' 
+ 1149  sudo gedit '/etc/apache2/sites-available/000-default.conf' 
+ 1150  sudo gedit '/etc/apache2/sites-available/default-ssl.conf' 
+ 1151  sudo gedit '/etc/apache2/apache2.conf' 
+ 1152  sudo service apache2 restart
+ 1153  sudo gedit '/etc/apache2/apache2.conf' 
+ 1154  sudo apt-get install acl
+ 1155  sudo setfacl -m d:g:www-data:X,g:www-data:X /home/me
+ 1156  sudo setfacl -m d:g:www-data:X,g:www-data:X /home
+ 1157  sudo setfacl -m d:g:www-data:X,g:www-data:X /home/Dropbox
+ 1158  sudo setfacl -m d:g:www-data:X,g:www-data:X '/home/nullsky/Dropbox' 
+ 1159  sudo /usr/sbin/apache2ctl restart
+ 1160  sudo gedit '/etc/apache2/apache2.conf' 
+ 1161  alias restartlamp='sudo /usr/sbin/apache2ctl restart'
+ 1162  restartlamp 
+ 1163  alias restartlamp='sudo /usr/sbin/apache2ctl restart'
+ 1164  restartlamp 
+ 1165  alias restartlamp='/usr/sbin/apache2ctl restart'
+ 1166  sudo restartlamp 
+ 1167  sudo /usr/sbin/apache2ctl restart
+ 1168  sudo gedit '/etc/apache2/apache2.conf' 
+ 1169  sudo /usr/sbin/apache2ctl restart
+ 1170  sudo apt-get update
+ 1171  sudo apt-get install lamp-server^
+ 1172  apache2
+ 1173  sudo /etc/init.d/apache2 restart
+ 1174  apache2 apache2-mpm-prefork apache2-utils apache2.2-common libapache2-mod-php5 libapr1 libaprutil1 libdbd-mysql-perl libdbi-perl libnet-daemon-perl libplrpc-perl libpq5 mysql-client-5.5 mysql-common mysql-server mysql-server-5.5 php5-common php5-mysql
+ 1175  sudo nano /etc/apache2/conf-available/fqdn.conf
+ 1176  gksu "gedit /etc/apache2/conf-available/fqdn.conf"
+ 1177  sudo apt-get purge mysql-server apache2 php5
+ 1178  sudo apt-get remove apache2 apache2-mpm-prefork apache2-utils apache2.2-common libapache2-mod-php5 libapr1 libaprutil1 libdbd-mysql-perl libdbi-perl libmysqlclient15off libnet-daemon-perl libplrpc-perl libpq5 mysql-client-5.0 mysql-common mysql-server mysql-server-5.0 php5-common php5-mysql
+ 1179  sudo apt-get purge apache2 php5-cli apache2-mpm-prefork apache2-utils apache2.2-common libapache2-mod-php5 libapr1 libaprutil1 libdbd-mysql-perl libdbi-perl libnet-daemon-perl libplrpc-perl libpq5 mysql-client mysql-common mysql-server php5-common php5-mysql phpmyadmin && sudo apt-get autoremove
+ 1180  sudo apt-get purge libapache2-mod-auth-mysql phpmyadmin
+ 1181  dpkg -l | grep ^ii | grep mysql-server | awk -F' ' '{ print $2 }'
+ 1182  sudo apt-get purge mysql-server mysql-server-5.1 mysql-server-core-5.1
+ 1183  dpkg -l | grep ^ii | grep apache2 | awk -F' ' '{ print $2 }'
+ 1184  sudo apt-get purge apache2 apache2-mpm-prefork apache2-utils apache2.2-bin apache2.2-common libapache2-mod-php5
+ 1185  sudo apt-get autoremove
+ 1186  sudo apt-get update
+ 1187  sudo apt-get install lamp-server^
+ 1188  apache2
+ 1189  sudo /etc/init.d/apache2 restart
+ 1190  sudo gedit /etc/apache2/conf-available/fqdn.conf
+ 1191  sudo shutdown
+ 1192  sudo gedit /etc/apache2/conf-available/fqdn.conf
+ 1193  sudo a2enconf fqdn
+ 1194  sudo /etc/init.d/apache2 restart
+ 1195  sudo a2enconf fqdn
+ 1196  sudo /etc/init.d/apache2 restart
+ 1197  libapache2-mod-php5
+ 1198  sudo a2enmod php5
+ 1199  sudo service apache2 restart
+ 1200  apache php "<?php phpinfo(); ?>"
+ 1201  sudo a2enmod php5
+ 1202  cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/mysite.conf 
+ 1203  sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/mysite.conf 
+ 1204  sudo rm cp /etc/apache2/sites-available/mysite.conf
+ 1205  sudo rm  /etc/apache2/sites-available/mysite.conf
+ 1206  sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/Dropbox.conf
+ 1207  sudo gedit '/etc/apache2/sites-available/Dropbox.conf' 
+ 1208  sudo gedit '/etc/apache2/apache2.conf' 
+ 1209  sudo a2dissite 000-default && sudo a2ensite Dropbox
+ 1210  sudo /etc/init.d/apache2 restart
+ 1211  sudo /usr/sbin/apache2ctl start
+ 1212  sudo gedit '/etc/php5/apache2/php.ini' 
+ 1213  sudo /usr/sbin/apache2ctl restart
+ 1214  sudo gedit '/etc/php5/cli/php.ini' 
+ 1215  sudo /usr/sbin/apache2ctl restart
+ 1216  cd '/home/nullsky/Dropbox/askRond/Website/don'\''t touch' 
+ 1217  g++ y.cpp -o y.out || echo error1
+ 1218  man g++
+ 1219  sudo tail /var/log/apache2/error.log
+ 1220  sudo tail -100 /var/log/apache2/error.log
+ 1221  sudo gedit /var/log/apache2/error.log
+ 1222  sudo /usr/sbin/apache2ctl restart
+ 1223  sudo gedit /var/log/apache2/error.log
+ 1224  sudo /usr/sbin/apache2ctl start
+ 1225  alias phprun = 'sudo /usr/sbin/apache2ctl start'
+ 1226  sudo /usr/sbin/apache2ctl restart
+ 1227  sudo chmod -R 755 '/home/nullsky/Dropbox' 
+ 1228  chmod 755 '/home/nullsky/Dropbox/index.php' 
+ 1229  renad
+ 1230  sudo chmod o+x /usr/bin/g++
+ 1231  sudo chmod o+x /usr/bin/g++-4.5
+ 1232  chown -R www-data:www-data folder
+ 1233  chown -R www-data:www-data '/home/nullsky/Dropbox/askRond/Website/don'\''t touch' 
+ 1234  history
+
+
+    1  sudo su -
+    2  sudo su-
+    3  sudo su -
+    4  sudo chown www-data:www-data Dropbox/
+    5  ls -l
+    6  cd Dropbox/
+    7  ls -l
+    8  sudo chown -R www-data:www-data ../Dropbox/
+    9  ls -l
+   10  vim index.php
+   11  sudo gedit index.php
+   12  ls
+   13  cd askRond/
+   14  ls
+   15  cd .
+   16  cd ..
+   17  cd askRond/Website/
+   18  cd don\'t\ touch/
+   19  ls
+   20  cd ..
+   21  sudo mv don\'t\ touch/ dntt
+   22  ls
+   23  ls -l
+   24  cd dontt
+   25  cd dntt/
+   26  ls
+   27  g++ y.cpp -o y.out 2>&1
+   28  sudo ./y.out 
+   29  cls
+   30  clean
+   31  clear
+   32  ls
+   33  vim index.php
+   34  sudo vi index.php
+   35  sudo gedit index.php
+   36  cd ..
+   37  chmod --help
+   38  chmod -R 755 dontt/*
+   39  chmod -R 755 dntt/*
+   40  chmod -R 755 dntt/
+   41  sudo chmod -R 755 dntt/
+   42  sudo chmod -R 755 dntt/8
+   43  sudo chmod -R 755 dntt/8*
+   44  sudo chmod -R 755 dntt/*
+   45  ls -l
+   46  cd dntt/
+   47  ls -l
+   48  cd ..
+   49  sudo chmod -R 777 dntt/*
+   50  ls -l dntt/
+   51  ls -l
+   52  sudo chmod -R 777 dntt/
+   53  ls -l
+   54  sudo gedit dntt/index.php
+
